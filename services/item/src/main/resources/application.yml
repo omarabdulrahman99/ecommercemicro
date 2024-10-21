@@ -1,0 +1,10 @@
+spring:
+  config:
+    import:
+      optional:configserver:http://localhost:8888
+  application:
+    name: item-service
+  flyway:
+    schemas: item
+    table: flyway_schema_history
+    locations: classpath:db/migration
